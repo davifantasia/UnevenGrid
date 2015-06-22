@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Uneven Grid</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--MainActivity-->
+    <string name="alternating_three_cells">Alternating 3 Cells Per Row</string>
+    <string name="app_description">Demonstrates uneven grids.</string>
+
+    <!--Alternating 3 Cells-->
+    <string name="title_activity_alternating_three_cells">Alternating Three Cells Per Row</string>
+</resources>
