@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Alternating Three Cells Adapter-->
+    <!--Even 1 item-->
+    <item name="crimson" type="color">#FFDC143C</item>
+    <!--Even 2 Items-->
+    <item name="antique_white" type="color">#FFFAEBD7</item>
+    <item name="brown" type="color">#FFA52A2A</item>
+    <!--Even items-->
+    <item name="red" type="color">#FFFF0000</item>
+    <item name="green" type="color">#FF00FF00</item>
+    <item name="blue" type="color">#FF0000FF</item>
+
+    <!--Odd 1 item-->
+    <item name="coral" type="color">#FFFF7F50</item>
+    <!--Odd 2 Items-->
+    <item name="cadet_blue" type="color">#FF5F9EA0</item>
+    <item name="khaki" type="color">#FFF0E68C</item>
+    <!--Odd items-->
+    <item name="yellow" type="color">#FFFFFF00</item>
+    <item name="cyan" type="color">#FF00FFFF</item>
+    <item name="magenta" type="color">#FFFF00FF</item>
+
+
+
+</resources>

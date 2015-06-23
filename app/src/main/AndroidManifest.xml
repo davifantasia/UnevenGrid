@@ -17,8 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AlternatingThreeCells"
+            android:name=".AlternatingThreeCellsActivity"
             android:label="@string/title_activity_alternating_three_cells" >
+        </activity>
+        <activity
+            android:name=".AlternatingThreeCellsItemDetailsActivity"
+            android:label="@string/title_activity_alternating_three_cells_item_details"
+            android:parentActivityName=".AlternatingThreeCellsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlternatingThreeCellsActivity" />
         </activity>
     </application>
 

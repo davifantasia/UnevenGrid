@@ -2,43 +2,44 @@ package com.davifantasia.unevengrid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class AlternatingThreeCellsItemDetailsActivity extends AppCompatActivity {
 
-    private Button mAlternatingThreeCells;
+    public static final String TITLE = "title";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_alternating_three_cells_item_details);
 
         init();
     }
 
-    private  void init() {
-        initViews();
-    }
+    private void init() {
+        TextView textView = (TextView) findViewById(R.id.title);
 
-    private  void initViews() {
-        mAlternatingThreeCells = (Button) findViewById(R.id.alternating_three_cells_button);
-        mAlternatingThreeCells.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AlternatingThreeCellsActivity.class));
+        Intent intent = getIntent();
+        String title = intent.getStringExtra(TITLE);
+
+        if (title != null) {
+            if (title.length() > 0)
+                textView.setText(title);
+            else {
+                textView.setText("Could not get Title");
             }
-        });
+        }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_alternating_three_cells_item_details, menu);
         return true;
     }
 
@@ -49,8 +50,10 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        // Respond to the action bar's Up/Home button
+        if (id == android.R.id.home) {
+            // Navigate to the parent of this activity.
+            NavUtils.navigateUpFromSameTask(this);
             return true;
         }
 

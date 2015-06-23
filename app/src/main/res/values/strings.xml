@@ -10,4 +10,17 @@
 
     <!--Alternating 3 Cells-->
     <string name="title_activity_alternating_three_cells">Alternating Three Cells Per Row</string>
+    <string name="number_of_items_to_display">number of items to display</string>
+    <string name="refresh_items">Refresh Items</string>
+    <string name="even1">Even 1</string>
+    <string name="even2">Even 2</string>
+    <string name="even3">Even 3</string>
+    <string name="odd1">Odd 1</string>
+    <string name="odd2">Odd 2</string>
+    <string name="odd3">Odd 3</string>
+
+    <!--Alternating Three Cells Item Details-->
+    <string name="title_activity_alternating_three_cells_item_details">Alternating Three Cells Item
+        Details
+    </string>
 </resources>

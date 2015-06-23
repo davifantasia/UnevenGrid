@@ -5,4 +5,17 @@
 
     <!--General-->
     <dimen name="gen_margin">10dp</dimen>
+
+    <!--Alternating Three Cells-->
+    <!--3 in a row-->
+    <dimen name="alternating_three_cells_item_margin">5dp</dimen>
+    <dimen name="big_width">240dp</dimen>
+    <dimen name="big_height">250dp</dimen>
+    <dimen name="small_width">120dp</dimen>
+    <dimen name="small_height">16dp</dimen>
+    <!--2 in a row-->
+    <dimen name="double_items_dim">180dp</dimen>
+    <!--1 in a row-->
+    <dimen name="single_item_width">400dp</dimen>
+
 </resources>
